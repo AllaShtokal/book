@@ -28,7 +28,7 @@ class BookServiceImplTest {
                 .id(1L)
                 .author("Author")
                 .title("Title")
-                .isbn("Code")
+                .isbn("0-201-63385-X")
                 .build();
 
         Mockito.when(bookRepo.save(any(Book.class))).thenReturn(mockBook);
@@ -40,14 +40,14 @@ class BookServiceImplTest {
                 .id(1L)
                 .author("Author")
                 .title("Title")
-                .isbn("Code")
+                .isbn("0-201-63385-X")
                 .build();
 
         BookDTO actual = bookServiceImple.save(BookDTO.builder()
                 .id(1L)
                 .author("Author")
                 .title("Title")
-                .isbn("Code")
+                .isbn("0-201-63385-X")
                 .build());
 
         assertEquals(expected.getId(), actual.getId());
