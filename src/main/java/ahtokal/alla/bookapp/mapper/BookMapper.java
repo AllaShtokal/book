@@ -11,7 +11,7 @@ public class BookMapper {
         return Book.builder()
                 .author(dto.getAuthor())
                 .title(dto.getTitle())
-                .code(dto.getCode())
+                .isbn(dto.getIsbn())
                 .build();
     }
 
@@ -20,7 +20,7 @@ public class BookMapper {
                 .id(entity.getId())
                 .author(entity.getAuthor())
                 .title(entity.getTitle())
-                .code(entity.getCode())
+                .isbn(entity.getIsbn())
                 .build();
     }
 

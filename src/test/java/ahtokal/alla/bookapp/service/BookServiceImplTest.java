@@ -1,10 +1,8 @@
 package ahtokal.alla.bookapp.service;
 
 import ahtokal.alla.bookapp.dto.BookDTO;
-import ahtokal.alla.bookapp.mapper.BookMapper;
 import ahtokal.alla.bookapp.model.Book;
 import ahtokal.alla.bookapp.repository.BookRepository;
-import ahtokal.alla.bookapp.validator.BookValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -30,7 +28,7 @@ class BookServiceImplTest {
                 .id(1L)
                 .author("Author")
                 .title("Title")
-                .code("Code")
+                .isbn("Code")
                 .build();
 
         Mockito.when(bookRepo.save(any(Book.class))).thenReturn(mockBook);
@@ -42,27 +40,20 @@ class BookServiceImplTest {
                 .id(1L)
                 .author("Author")
                 .title("Title")
-                .code("Code")
+                .isbn("Code")
                 .build();
 
         BookDTO actual = bookServiceImple.save(BookDTO.builder()
                 .id(1L)
                 .author("Author")
                 .title("Title")
-                .code("Code")
+                .isbn("Code")
                 .build());
 
         assertEquals(expected.getId(), actual.getId());
         assertEquals(expected.getAuthor(), actual.getAuthor());
         assertEquals(expected.getTitle(), actual.getTitle());
-        assertEquals(expected.getCode(), actual.getCode());
+        assertEquals(expected.getIsbn(), actual.getIsbn());
     }
 
-    @Test
-    void delete() {
-    }
-
-    @Test
-    void findAll() {
-    }
 }

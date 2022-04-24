@@ -30,10 +30,10 @@ public class Book {
     @Column(name = COLUMN_AUTHOR)
     private String author;
 
-    @Column(name = COLUMN_TITLE, nullable = false)
+    @Column(name = COLUMN_TITLE)
     private String title;
 
-    @Column(name = COLUMN_CODE, nullable = false)
-    private String code;
+    @Column(name = COLUMN_CODE)
+    private String isbn;
 
 }

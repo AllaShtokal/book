@@ -1,6 +1,6 @@
 package ahtokal.alla.bookapp.exception;
 
-import ahtokal.alla.bookapp.dto.ErrorDTO;
+import ahtokal.alla.bookapp.error.ErrorDTO;
 import lombok.Getter;
 
 import java.util.List;

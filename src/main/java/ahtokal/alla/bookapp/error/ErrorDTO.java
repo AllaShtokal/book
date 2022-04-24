@@ -1,14 +1,13 @@
-package ahtokal.alla.bookapp.dto;
+package ahtokal.alla.bookapp.error;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
+@AllArgsConstructor(staticName = "of")
 public class ErrorDTO {
-    private final String objectName;
     private final String message;
-    private final String fields;
+    private final String field;
 
 }
 

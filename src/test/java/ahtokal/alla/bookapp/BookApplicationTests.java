@@ -1,10 +1,9 @@
-package ahtokal.alla.book;
+package ahtokal.alla.bookapp;
 
-import ahtokal.alla.bookapp.BookApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = BookApplication.class)
+@SpringBootTest
 class BookApplicationTests {
 
 	@Test

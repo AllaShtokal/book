@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Objects;
 
 @RestController
 @RequiredArgsConstructor
@@ -22,7 +21,6 @@ public class BookController {
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<BookDTO>> getAll( Pageable pageable) {
-        pageable = Objects.isNull(pageable) ? Pageable.unpaged() : pageable;
         Page<BookDTO> page = bookService.findAll(pageable);
         return ResponseEntity.ok(page.getContent());
     }

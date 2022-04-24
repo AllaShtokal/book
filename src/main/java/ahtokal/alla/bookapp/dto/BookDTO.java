@@ -11,6 +11,6 @@ public class BookDTO {
     private Long id;
     private String author;
     private String title;
-    private String code;
+    private String isbn;
 
 }
