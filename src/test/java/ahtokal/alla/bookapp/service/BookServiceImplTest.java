@@ -7,14 +7,13 @@ import ahtokal.alla.bookapp.repository.BookRepository;
 import ahtokal.alla.bookapp.validator.BookValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
-import static org.mockito.ArgumentMatchers.any;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
 
 @SpringBootTest
 class BookServiceImplTest {
@@ -24,12 +23,6 @@ class BookServiceImplTest {
 
     @MockBean
     BookRepository bookRepo;
-
-    @Autowired
-    BookValidator bookValidator;
-
-    @Autowired
-    BookMapper bookMapper;
 
     @BeforeEach
     void setUp() {
