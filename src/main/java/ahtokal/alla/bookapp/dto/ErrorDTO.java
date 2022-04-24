@@ -1,6 +1,5 @@
 package ahtokal.alla.bookapp.dto;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

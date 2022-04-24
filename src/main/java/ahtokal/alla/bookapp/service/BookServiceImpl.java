@@ -15,12 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class BookServiceImpl implements BookService {
 
-    //dodaty liquidbase
-    //baze na dockerze mozna postawyty
-    //front na Angularze: dwie strony izi ma byc :)
-    //testy
-    //deploy
-
     private final BookValidator bookValidator;
     private final BookMapper bookMapper;
     private final BookRepository bookRepo;

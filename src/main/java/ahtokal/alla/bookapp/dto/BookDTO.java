@@ -1,9 +1,8 @@
 package ahtokal.alla.bookapp.dto;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 import lombok.experimental.FieldNameConstants;
-
-import java.util.Objects;
 
 @Data
 @Builder
